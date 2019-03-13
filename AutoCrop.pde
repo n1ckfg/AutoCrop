@@ -4,12 +4,11 @@ PImage img, imgCropped;
 color bgColor = color(0);
 
 void setup() {
-  size(50, 50, P2D);
+  size(256, 256, P2D);
 
   img = loadImage("test.png");
-  imgCropped = cropImage(img, bgColor);
+  imgCropped = resizeImage(squareImage(cropImage(img, bgColor), bgColor), width, height);
   println(img.width + " " + img.height + " -> " + imgCropped.width + " " + imgCropped.height);
-  surface.setSize(imgCropped.width, imgCropped.height);
 }
 
 void draw() {
