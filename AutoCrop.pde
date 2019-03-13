@@ -1,5 +1,3 @@
-import java.util.*;
-
 PImage img, imgCropped;
 color bgColor = color(0);
 

@@ -1,3 +1,5 @@
+import java.util.*;
+
 PImage cropImage(PImage _img, color _bgColor) {
   ArrayList<Integer> allX = new ArrayList<Integer>();
   ArrayList<Integer> allY = new ArrayList<Integer>();
